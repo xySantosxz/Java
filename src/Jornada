@@ -10,3 +10,28 @@ Como eu não quero gastar dinheiro em um curso, pensei em ler um artigo,
 esse artigo constitui as boas práticas e um seguimento lógico, sem apressar nada.
 
 
+Git
+
+É a primeira coisa que decidi aprender antes de efetuar qualquer código,
+isto porque permite controlar as versões, caso o código tivesse problema,
+teriamos sempre uma forma de voltar atrás, em projetos grandes é válido utilizar git.
+
+Este é o processo para efetuar uma atualização ou publicar um projeto.
+
+git init
+git status
+
+git branch -M main
+git status
+
+git add .
+
+git commit -m "Java"
+
+git status
+
+git remote add origin ...
+git remote -v
+
+git push -u origin main
+
