@@ -1,0 +1,43 @@
+Tipos de Dados - https://jenkov.com/tutorials/java/data-types.html
+
+Vamos dividir os Tipos de Dados em dois grupos:
+
+Tipo de Dado Primitivo
+
+| Tipo de Dado | Descrição
+|   boolean    | valor binário é true or false
+|   byte       | 8 bit, pode ir de -128 a 127
+|   short      | 16 bit, -32.768 a 32.767
+|   char       | 16 bit Unicode
+|   int        | 32, -2.147.483.648 to 2.147.483.647
+|   long       | 64, -9.223.372.036.854.775.808 to 9.223.372.036.854.775.808
+|   float      | 32 valor float
+|   double     | 64 valor float
+
+declarar uma variável do tipo primitivo: int oInteiro;
+
+Tipo de Dado Objeto
+
+| Tipo de Dado | Descrição
+|   boolean    | valor binário é true or false
+|   byte       | 8 bit, pode ir de -128 a 127
+|   short      | 16 bit, -32.768 a 32.767
+|   Character  | 16 bit Unicode
+|   Integer    | 32, -2.147.483.648 to 2.147.483.647
+|   long       | 64, -9.223.372.036.854.775.808 to 9.223.372.036.854.775.808
+|   float      | 32 valor float
+|   double     | 64 valor float
+|   string     | N byte Unicode string of textual data. Immutable
+
+declarar uma variavel de referencia a um tipo objeto
+
+Integer meuInteger;
+
+meuInteger = new Integer(45);
+
+Os valores de um Objeto com dados primitivos não são imutáveis,
+ou seja, uma vez aplicado o valor no objeto, não existe a possibilidade
+de alterar depois.
+
+----------------------------------------------------------------------------------------
+

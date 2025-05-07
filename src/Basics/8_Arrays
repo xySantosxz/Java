@@ -1,0 +1,118 @@
+Arrays - https://jenkov.com/tutorials/java/arrays.html || https://www.youtube.com/watch?v=ei_4Nt7XWOw
+
+Array = usado para armazenar múltiplos valores em uma variavel
+
+Declarar uma Variável Array em Java
+
+int[] intArray;
+
+Instanciar um Array em Java
+
+int[] intArray;
+
+intArray = new int[10];
+
+este Array do tipo Inteiro criou 10 espaços para variáveis do tipo int
+
+Array Length
+
+int[] intArray = new int[10];
+
+int arrayLength = intArray.length;
+
+length representa o tamanho do nosso Array que é 10;
+
+Iterando Arrays
+
+Podemos fazer um loop para chegar a todos os elementos do Array
+usando os Loops do Java, temos o exemplo comumente usado chamado o for loop:
+
+String[] stringArray = new String[10];
+
+for(int i=0; i < stringArray.length; i++){
+    stringArray[i] = "String numero " + i;
+}
+
+for(int i=0; i < stringArray.length; i++){
+   soutprintln( stringArray[i] );
+}
+
+Arrays Multidimensionais
+
+int[][] intArray = new int[10][20];
+
+Se eu tiver uma variável do tipo int no espaço [1][2] com o valor de 200;
+então quando eu tiver uma variavel de referencia e chamar a minha variavel com o valor 200;
+vai imprimir 200;
+
+Iterando Arrays Multidimensionais
+
+int[][] intArray = new int[10][20];
+
+for(int i=0; i < intArrays.length; i++){
+    for(int j=0; j < intArrays[i].length; j++){
+        System.out.println("i: " + i + ", j: " + j);
+    }
+}
+
+Inserir elementos para um Array
+
+int[] ints   = new int[20];
+
+int insertIndex = 10;
+int newValue    = 123;
+
+//move elements below insertion point.
+for(int i=ints.length-1; i > insertIndex; i--){
+    ints[i] = ints[i-1];
+}
+
+//insert new value
+ints[insertIndex] = newValue;
+
+System.out.println(Arrays.toString(ints));
+
+Remover um elemento do Array
+
+int[] ints   = new int[20];
+
+ints[10] = 123;
+
+int removeIndex = 10;
+
+for(int i = removeIndex; i < ints.length -1; i++){
+    ints[i] = ints[i + 1];
+}
+
+
+
+A Classe Arrays
+
+Sempre importar o "java.util.Arrays"
+
+
+Array de Cópia
+
+Converter Arrays em Strings com Arrays.toString()
+
+int[]   ints = new int[10];
+
+for(int i=0; i < ints.length; i++){
+    ints[i] = 10 - i;
+}
+
+System.out.println(java.util.Arrays.toString(ints));
+
+Array organizados
+
+int[]   ints = new int[10];
+
+for(int i=0; i < ints.length; i++){
+    ints[i] = 10 - i;
+}
+
+System.out.println(java.util.Arrays.toString(ints));
+
+java.util.Arrays.sort(ints);
+
+System.out.println(java.util.Arrays.toString(ints));

@@ -1,0 +1,60 @@
+Metodos String - https://jenkov.com/tutorials/java/strings.html
+
+
+Criar uma String
+
+Strings em Java são objetos. Entretanto,
+deves utilizar o operador new para criar
+este novo objeto String. A sua instância seria
+
+String minhaString = new String("Hello World");
+
+Java String Literals
+
+Tem uma forma mais curta de criar uma nova String
+
+String minhaString = "Hello World";
+
+Java Text Blocks
+
+    String blocoTexto = """
+                   This is a text inside a
+                   text block
+                   """;
+
+Concatenar Strings
+
+String um = "Hello";
+String dois = "World";
+
+String tres = um + " " + dois;
+
+Tamanho da String
+
+String string = "Hello World";
+int tamanho = string.length();
+
+equals() / equalsIgnoreCase()
+
+String one   = "abc";
+String two   = "def";
+String three = "abc";
+String four  = "ABC";
+
+System.out.println( one.equals(two) );
+System.out.println( one.equals(three) );
+System.out.println( one.equals(four) );
+
+Converter Objetos em Strings
+
+Integer integer = new Integer(123);
+
+String intStr = integer.toString();
+
+Converter para Uppercase e Lowercase
+
+String theString =
+    "This IS a mix of UPPERcase and lowerCASE";
+
+String uppercase = theString.toUpperCase();
+String lowercase = theString.toLowerCase();

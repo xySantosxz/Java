@@ -1,0 +1,68 @@
+Sintaxe Básica - https://codegym.cc/pt/groups/posts/pt.484.sintaxe-java-uma-breve-introducao-a-linguagem-de-programacao
+
+A Sintaxa Java é o básico da linguagem, com as
+suas regras, comando, construções para escrever programas
+que o compilador e o computador "entendem".
+
+"Programar é como Matemática, só se consegue praticando, não do dia para a noite"
+
+
+Objeto em Java?
+
+Um objeto tem vários estados e comportamentos, nada mais é que uma instância de uma classe.
+
+Classe em Java?
+
+Uma classe é um modelo do objeto. Descreve o comportamento e os estados que o objeto suporta,
+
+Exemplo:
+
+A classe Gato, tem o seu nome, dono;
+este gato também tem comportamentos
+como comer, ronronar, andar, dormir.
+
+Métodos em Java?
+
+Métodos são para descrever as lógicas, manipular dados e executar todas as ações.
+Cada método tem o seu comportamento. Uma classe pode ter vários métodos.
+
+Exemplo:
+
+podemos escrever um método sleep() para dormir e para a classe Gato ou ronronar() para ronronar
+
+Variáveis de Instância em Java
+
+Cada objeto tem um conjunto exclusivo de variáveis de instância.
+O estado do objeto geralmente é gerado pelos valores atribuídos as variáveis de instância
+
+Exemplo:
+
+o nome ou a idade do gato pode ser uma variável.
+
+-----------------------------------------------------------------------------
+
+Exemplo de uma classe
+
+public static void main(String[] args)
+
+public - Modificador de Acesso
+static - uma palavra-chave usada para declarar métodos e variáveis da classe que serão usados com a própria classe
+void - tipo de retorno. Sendo "void" não retorna nada.
+main - nome do método, o que será executado
+(String[] args) - argumentos do método
+
+------------------------------------------------------------------------------
+
+Regras básicas de Sintaxe Java
+
+- o nome do arquivo deve ser idêntico ao nome da classe;
+- Na maioria das vezes, cada classe está em um arquivo separado com uma extensão .java. Os arquivos de classe geralmente são agrupados em pastas. Essas pastas são chamadas de pacotes;
+- Os caracteres diferenciam maiúsculas de minúsculas. String não é igual a string ;
+- O início do processamento do programa Java sempre começa no método principal : public static void main (String [] args) . O método main () é uma parte obrigatória de qualquer programa Java;
+- Método (procedimento, função) é uma sequência de comandos. Os métodos definem o comportamento de um objeto;
+- A ordem dos métodos no arquivo do programa é irrelevante;
+- Lembre-se de que a primeira letra do nome de uma classe é maiúscula. Se você estiver usando várias palavras, use letras maiúsculas para a primeira letra de cada palavra (“MyFirstJavaClass”);
+- Os nomes de todos os métodos na sintaxe Java começam com uma letra minúscula. Ao usar várias palavras, as letras subsequentes são maiúsculas ("public void myFirstMethodName ()");
+- Os arquivos são salvos com nome de classe e extensão .java ("MyFirstJavaClass.java");
+- Na sintaxe Java, existem delimitadores "{...}" que denotam um bloco de código e uma nova área de código;
+- Cada instrução de código deve terminar com um ponto e vírgula.

@@ -1,0 +1,40 @@
+Conversão de Tipos - https://tecnologiaeinformacao.netlify.app/java/java-type-conversion-ptbr
+
+Conversão Implícita
+
+Somente pode ser feita entre um valor maior que o outro
+
+ou seja, o tipo que recebe o dado é maior do que o tipo
+da variável que vai ser referenciada.
+
+int var1 = 10;
+double var2 = var1;
+
+racicionio entre os dados primitivos:
+
+long n1 = 8;
+double n2 = n1; // int atribuído à uma variável double.
+byte n3 = 100;
+short n4 = n3; // byte atribuído à uma variável short.
+short n5 = 100;
+int n6 = n5; // short atribuído a uma variável int.
+
+Existe possibilidade de estes valores
+sofrerem alterações, exemplo abaixo:
+
+long n1 = 1_999_999_999;
+float n2 = n1; // valor final 2.000.000.000
+
+Conversão Explícita
+
+tipo identificador = (tipo que queremos) valor
+
+Exemplo:
+
+double n1 = 32.4;
+int n2 = (int) n1;
+
+Isto faz com que o valor seja convertido de n1 para double
+e insere no segundo valor exemplo
+
+

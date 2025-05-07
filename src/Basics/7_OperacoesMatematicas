@@ -1,0 +1,56 @@
+Operações Matemáticas - https://jenkov.com/tutorials/java/math-operators-and-math-class.html
+
+Operadores
+
++ adição
+- subtração
+* multiplicação
+/ divisão
+
+Adição
+
+int soma1 = 10 + 20 + 30;
+int sum3 = sum2 + 99 + 123;
+
+também existe forma de trazer a variável
+com o seu próprio valor mais outro valor
+
+int resultado = 10;
+resultado = resultado + 20; (ou resultado += 20);
+
+Subtração
+
+int sub1 = 100 - 10;
+int sub2 = sub1 - 5;
+int sub3 = sub1 - sub2;
+
+int ressultado = 100;
+resultado -= 10;
+
+Multiplicação
+
+int mul1 = 100 * 10;
+int mul2 = sub1 * 5;
+int mul3 = sub1 * sub2;
+
+int ressultado = 100;
+resultado *= 10;
+
+Divisão
+
+
+int div1 = 100 / 10;
+int div2 = sub1 / 5;
+int div3 = sub1 / sub2;
+
+int ressultado = 100;
+resultado /= 10;
+
+Modulo / Resto
+
+int div1 = 100  % 10;
+int div2 = sub1 % 5;
+int div3 = sub1 % sub2;
+
+int ressultado = 100;
+resultado %= 10;

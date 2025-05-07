@@ -1,0 +1,113 @@
+Variáveis - https://jenkov.com/tutorials/java/variables.html
+
+Tipos de Variáveis
+
+Não-estático
+Estático
+Variável Local
+Parâmetros
+
+Declarar uma variável
+
+tipo nomeVariavel;
+
+Aplicar valor a uma variável
+
+nomeVariavel = valor;
+
+Leitura de uma Variável
+
+int oInteiro = 100;
+
+int oInteiro2 = oInteiro;
+
+int oInteiro3 = oInteiro2;
+
+sout(oInteiro3);
+
+Regras de Convenção para nomear Variáveis
+
+1. O nome das variáveis são case sensitive
+2. As variáveis devem começar com uma letra, $ ou _
+3. Após o primeiro caracter da variável, o nome pode conter números, também letras, $ _
+4. As variáveis não podem ser iguais as palavras-chaves reservadas do Java. Por exemplo,
+    a palavra "int" ou "for" são palavras reservadas do Java.
+
+Aqui temos opções válidas:
+
+myvar
+myVar
+MYVAR
+_myVar
+$myVar
+myVar1
+myVar_1
+
+
+Escopo das Variáveis - https://www.baeldung.com/java-variable-scope
+
+Escopo de uma Classe
+
+Qualquer variável que seja de acesso privado mas fora de um método, é um escopo da classe.
+Então, as variáveis podem ser usadas em qualquer lugar da classe, mas não fora dela.
+
+public class exemploEscopo {
+ private Integer quantidade = 0;
+ public void metodoExemplo(){
+    quantidade++
+ }
+ public void metodoOutroExemplo(){
+    Integer outraQuantidade = quantidade + 4;
+ }
+}
+
+Escopo de um Método
+
+public class exemploMetodoEscopo(){
+    public void metodoA(){
+        Integer area = 2;
+    }
+    public void metodoB(){
+    // vai dar erro no compilador, pois a area não é uma variável, só conseguimos
+    // utilizar dentro do metodoA e não em B, só daria em B se tivessemos um ponto de referencia
+        area = area + 2;
+    }
+}
+
+Escopo de um Ciclo
+
+Se declararmos uma variavel dentro de um Loop,
+teremos um escopo loop que apenas está disponível dentro do próprio
+loop.
+
+public class ExemploEscopoLoop {
+    List<String> listaDeNomes = Arrays.asList("Joana", "Maria", "Ricardo");
+    public void iteracaoDeNomes(){
+        String todosNomes = "";
+        for (String name : listOfNames) {
+            todosNomes = todosNomes + " " + nome;
+        }
+        // Erro no Compilador, nome não é reconhecido sendo uma variável.
+        String ultimoNomeUsado = nome;
+    }
+}
+
+Podemos ver que no metodo iteracaoDeNomes temos a variavel name.
+Esta variável só pode ser utilizada dentro do loop e não é válida no exterior.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+Ciclo de um Programa - https://www.startertutorials.com/corejava/life-cycle-java-program.html
+
+O ciclo de um porgrama java divide-se em três partes:
+
+- Escrita do Programa
+
+- Compilação do Código
+
+- Execução do Código em byte
+
+Em primeiro, temos de escrever o nosso programa em um editor de texto.
+Depois de completar a escrita, salvamos o ficheiro. Enquanto salvamos,
+temos de deixar o ficheiro com a extensão .java
+
+Depois vem a compilação. O nome do compilador Java é javac.
+o output do compilador é independente da máquina e da plataforma,
+que é por bytecode.
+
+Então vem a execução. o Bytecode gerado pelo javac é executado na JVM
+Java Virtual Machine. o Input da JVM é o bytecode e o output é o código da máquina,
+ou seja, 0's e 1's, que vão ser feitas pela CPU da máquina local.
+
+Detalhadamente - https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html
