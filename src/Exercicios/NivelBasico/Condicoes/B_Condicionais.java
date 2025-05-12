@@ -1,10 +1,8 @@
-package Exercicios;
+package Exercicios.NivelBasico.Condicoes;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Condicionais {
+public class B_Condicionais {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
 
@@ -44,7 +42,27 @@ public class Condicionais {
         /*
         3. Por fazer
 
+
+        int[] array = new int[3];
+        int maior = array[0];
+        int IndiceValorMaior = -1;
+
+        int num;
+
+        for (int i = 0; i < array.length; i++){
+            num = ler.nextInt();
+            array[i] = num;
+        }
         System.out.println(Arrays.toString(array));
+
+        for (int i = 0; i < array.length; i++){
+            if (array[i] > maior){
+                maior = array[i];
+                IndiceValorMaior = i;
+            }
+        }
+
+        problemas: entender a manipulação, tive que ter outra variável intermediária para substituir valores
 
          */
 
@@ -85,24 +103,6 @@ public class Condicionais {
          */
 
 
-        int[] array = new int[3];
-        int maior = array[0];
-        int IndiceValorMaior = -1;
-
-        int num;
-
-        for (int i = 0; i < array.length; i++){
-            num = ler.nextInt();
-            array[i] = num;
-        }
-        System.out.println(Arrays.toString(array));
-
-        for (int i = 0; i < array.length; i++){
-            if (array[i] > maior){
-                maior = array[i];
-                IndiceValorMaior = i;
-            }
-        }
 
 
     }

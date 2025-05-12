@@ -1,8 +1,8 @@
-package Exercicios;
+package Exercicios.NivelBasico.Loops;
 
 import java.util.Scanner;
 
-public class Loops {
+public class B_Loops {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         /*

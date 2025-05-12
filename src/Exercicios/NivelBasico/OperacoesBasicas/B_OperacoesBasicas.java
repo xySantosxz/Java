@@ -1,8 +1,8 @@
-package Exercicios;
+package Exercicios.NivelBasico.OperacoesBasicas;
 
 import java.util.Scanner;
 
-public class OperacoesBasicas {
+public class B_OperacoesBasicas {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         /* 1. Escreva um programa que declare duas variáveis inteiras, atribua valores a elas, e imprima a soma.
